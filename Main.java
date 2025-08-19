@@ -8,7 +8,7 @@ class Main {
     //We will be using System.out.println and System.out.print throughout the year. Try using both below to see what the difference is!
 
 
-
+    System.out.println("I am " + 15 + " years old");
 
 
 
@@ -25,14 +25,26 @@ class Main {
     //For AP we need to know: int, double, boolean
 
     //List examples of the types below and give definition
-    //int (integer): 
-    //double:
-    //boolean:
+    //int (integer): numerical values
+    //double: decimals (floating point)
+    //boolean: true or false
 
     //For now we are just going to work with primitive
 
     //Create 3 variables of each of the above types (USE GOOD CODING PRACTICE WHEN CREATING THE VARIABLES
+    int carSpeed = 45;
+    int age = 15;
+    int gradeLevel = 10;
 
+    double height = 5.6;
+    double percentage = 98.6;
+    double length = 9.8;
+
+    boolean lightOn = true;
+    boolean itemStocked = false;
+    boolean trafficLightOn = false;
+
+    System.out.println(carSpeed);
 
 
 
@@ -42,19 +54,36 @@ class Main {
     //What are the math operators that we can use?
     //+ - * / %
 
+    // % -> outputs the remainder
+
+    // PEMMDASA -> mod (%) is on the same level as division and multiplication
+
     //Try doing some math operations with numbers. How can we check to see if the math worked?
 
     //Create codes that will print the following:
 
     //Odd integers from 1 to 100, inclusive of both
 
-
+    for (int i = 1; i < 101; i = i + 2){
+       System.out.println(i);
+    }
 
     //All multiples of 3 from 1 to 100
 
-
+    for (int i = 1; i <= 100; i++){
+       if (i%3 == 0){
+        System.out.println(i);
+    }
+   }
 
 
     //Starting at 1000, print on the same line (with a - [hypthen] between each) all of the numbers that end in 0 going down to 0
+
+    for (int i = 1000; i >= 0; i--){
+      if (i%10 == 0){
+        System.out.print(i + "-");
+      }
+    }
+
   }
 }
